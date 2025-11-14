@@ -22,7 +22,7 @@ An intelligent mental health support companion powered by RAG (Retrieval-Augment
 ### **Technical Features**
 - **Vector Database** - ChromaDB for semantic search and document retrieval
 - **LLM Tool Calling** - OpenAI function calling for dynamic web search
-- **Multi-Source Data** - Aggregates from Hugging Face, web scraping, PDFs, and APIs
+- **Multi-Source Data** - Aggregates from Hugging Face, web scraping
 - **Safety Guidelines** - Built-in safety rules to avoid medical advice
 - **Real-Time Search** - Tavily API integration for latest mental health research
 
