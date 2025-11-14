@@ -5,7 +5,6 @@ An intelligent mental health support companion powered by RAG (Retrieval-Augment
 ![Python](https://img.shields.io/badge/Python-3.13+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.50.0-red.svg)
 ![OpenAI](https://img.shields.io/badge/OpenAI-GPT--3.5--turbo-green.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ---
 
