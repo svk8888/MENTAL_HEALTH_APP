@@ -16,7 +16,7 @@ class TavilyWebSearch:
         """
         self.api_key = api_key or os.getenv("TAVILY_API_KEY")
         if not self.api_key:
-            print("⚠️ Warning: TAVILY_API_KEY not found. Web search will not work.")
+            print(" Warning: TAVILY_API_KEY not found. Web search will not work.")
             self.client = None
         else:
             self.client = TavilyClient(api_key=self.api_key)
@@ -33,7 +33,7 @@ class TavilyWebSearch:
             List of search results with content and metadata
         """
         if not self.client:
-            print("❌ Tavily client not initialized. Skipping web search.")
+            print(" Tavily client not initialized. Skipping web search.")
             return []
         
         try:
@@ -69,9 +69,9 @@ class TavilyWebSearch:
                     }
                 })
             
-            print(f"✅ Tavily search returned {len(results)} results for: {query[:50]}...")
+            print(f"Tavily search returned {len(results)} results for: {query[:50]}...")
             return results
             
         except Exception as e:
-            print(f"❌ Tavily search failed: {e}")
+            print(f" Tavily search failed: {e}")
             return []
