@@ -140,7 +140,7 @@ For general emotional support or known information, respond directly without usi
             user_prompt += "\n"
         
         if risk_level != "low_risk":
-            user_prompt += f"⚠️ RISK LEVEL: {risk_level.upper()} - Prioritize safety and resource provision\n\n"
+            user_prompt += f" RISK LEVEL: {risk_level.upper()} - Prioritize safety and resource provision\n\n"
         
         if self.conversation_context:
             user_prompt += "RECENT CONVERSATION:\n"
@@ -211,7 +211,7 @@ For general emotional support or known information, respond directly without usi
                             })
                 
                 # Second LLM call with tool results
-                print("🤖 LLM processing search results and generating final response...")
+                print(" LLM processing search results and generating final response...")
                 final_response = self.client.chat.completions.create(
                     model="gpt-3.5-turbo",
                     messages=messages,
@@ -222,7 +222,7 @@ For general emotional support or known information, respond directly without usi
                 ai_response = final_response.choices[0].message.content.strip()
             else:
                 # No tool calls, use direct response
-                print("💭 LLM responding directly without tools")
+                print(" LLM responding directly without tools")
                 ai_response = response_message.content.strip()
             
             # Update conversation context
@@ -238,7 +238,7 @@ For general emotional support or known information, respond directly without usi
             return ai_response
             
         except Exception as e:
-            print(f"❌ Error in generate_response_with_tools: {e}")
+            print(f" Error in generate_response_with_tools: {e}")
             return "I'm here to listen. It seems I'm having some technical difficulties. How are you feeling right now?"
     
     def _format_search_results(self, search_results: List[Dict]) -> str:
