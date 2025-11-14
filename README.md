@@ -410,10 +410,8 @@ streamlit run app.py
 
 ---
 
-## 🚧 Roadmap
 
 ### **Planned Features**
-
 
 - [ ] Voice input/output
 - [ ] Mobile app version
@@ -466,7 +464,7 @@ streamlit run app.py
 
 ---
 
-## 🙏 Acknowledgments
+## Tools Used
 
 - **OpenAI** - GPT-3.5-turbo language model
 - **Tavily** - Real-time web search API
