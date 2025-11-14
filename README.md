@@ -16,8 +16,6 @@ An intelligent mental health support companion powered by RAG (Retrieval-Augment
 - 🔍 **Intelligent Web Search** - LLM autonomously decides when to search for recent information
 - ⚠️ **Crisis Detection** - Identifies high-risk situations and provides immediate resources
 - 💭 **Context-Aware** - Maintains conversation history for coherent interactions
-- 📊 **Mood Tracking** - Quick mood check-in buttons for easy interaction
-- 🎯 **Daily Check-ins** - Personalized daily mental health check-in prompts
 
 ### **Technical Features**
 - **Vector Database** - ChromaDB for semantic search and document retrieval
