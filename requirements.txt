@@ -1,0 +1,14 @@
+langchain[openai]
+langchain[google-genai]
+langchain[groq]
+python-dotenv
+langgraph
+langchain_mcp_adapters
+langchain_community
+langchain_chroma
+langchain_mcp
+streamlit
+google.genai
+chromadb
+PyPDF2
+tavily-python
