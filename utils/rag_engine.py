@@ -18,7 +18,7 @@ class MentalHealthRAG:
     def load_dynamic_knowledge(self):
         """Load data from multiple dynamic sources"""
         if self.collection.count() == 0:
-            print("🔄 Loading dynamic mental health knowledge...")
+            print(" Loading dynamic mental health knowledge...")
             
             all_documents = []
             all_metadatas = []
@@ -48,9 +48,9 @@ class MentalHealthRAG:
                     metadatas=all_metadatas,
                     ids=all_ids
                 )
-                print(f"✅ Loaded {len(all_documents)} documents from dynamic sources")
+                print(f"Loaded {len(all_documents)} documents from dynamic sources")
             else:
-                print("⚠️ No documents loaded - using fallback")
+                print(" No documents loaded - using fallback")
                 self.load_fallback_data()
     
     def retrieve_relevant_content(self, query: str, n_results: int = 3) -> List[Dict]:
@@ -67,7 +67,7 @@ class MentalHealthRAG:
         try:
             # Check if database has any documents
             if self.collection.count() == 0:
-                print("⚠️ Vector DB is empty. LLM will respond without RAG context.")
+                print(" Vector DB is empty. LLM will respond without RAG context.")
                 return []
             
             results = self.collection.query(
@@ -77,7 +77,7 @@ class MentalHealthRAG:
             
             # Check if any results were returned
             if not results['documents'][0]:
-                print("⚠️ No matching documents found in Vector DB. LLM will respond without RAG context.")
+                print(" No matching documents found in Vector DB. LLM will respond without RAG context.")
                 return []
             
             return [
@@ -88,5 +88,5 @@ class MentalHealthRAG:
                 for doc, meta in zip(results['documents'][0], results['metadatas'][0])
             ]
         except Exception as e:
-            print(f"❌ Error retrieving from Vector DB: {e}. LLM will respond without RAG context.")
+            print(f" Error retrieving from Vector DB: {e}. LLM will respond without RAG context.")
             return []
