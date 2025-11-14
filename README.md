@@ -448,16 +448,6 @@ streamlit run app.py
 - Call 911 or go to your nearest emergency room
 - Contact a licensed mental health professional
 
----
-
-## 📚 Documentation
-
-Detailed documentation is available in the `Documentation/` folder:
-
-- **RAG_EXPLANATION.md** - How retrieval-augmented generation works
-- **WEB_SEARCH_INTEGRATION.md** - Tavily API integration guide
-- **TOOL_INTEGRATION_EXPLANATION.md** - Comparison of integration approaches
-- **LLM_TOOL_CALLING_GUIDE.md** - Complete guide to function calling
 
 ---
 
