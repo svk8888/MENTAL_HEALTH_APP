@@ -284,7 +284,7 @@ streamlit run app.py
 ### **Current Sources**
 
 1. **Hugging Face Datasets**
-   - PubMed QA (medical Q&A)
+   - PubMed QA (medical Q&A) --> https://huggingface.co/datasets/qiaojin/PubMedQA/
    - 100 samples from training set
 
 2. **Web Scraping**
