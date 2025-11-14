@@ -49,7 +49,7 @@ class SafetyMonitor:
         
         elif risk_level == "medium_risk":
             return """
-            🤗 **It sounds like you're going through an incredibly difficult time.**
+             **It sounds like you're going through an incredibly difficult time.**
 
             **Please consider reaching out to:**
             • A trusted friend or family member
