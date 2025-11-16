@@ -161,6 +161,12 @@ Bot: 🔍 Searching for latest information...
 User: What are some coping strategies for stress?
 Bot: Here are some evidence-based coping strategies...
 ```
+**LLM Response(Not RAG and WebSearch):**
+```
+User: How should I tell my boss I'm struggling with anxiety?
+Bot: Answer will be generated from LLM with using RAG or Wesearch
+```
+
 
 ---
 
